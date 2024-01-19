@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscription Manager</title>
+</head>
+<body>
+    <h1>Subscription Manager</h1>
+    
+    <h2>Your Subscriptions</h2>
+    <ul>
+        <li>Category 1 - Daily Updates <button onclick="unsubscribe('category1')">Unsubscribe</button></li>
+        <li>Category 2 - Weekly News <button onclick="unsubscribe('category2')">Unsubscribe</button></li>
+        <!-- Add more subscription categories as needed -->
+    </ul>
+
+    <h2>Available Categories</h2>
+    <ul>
+        <li><label><input type="checkbox" id="category3"> Category 3 - Monthly Offers</label></li>
+        <li><label><input type="checkbox" id="category4"> Category 4 - Special Events</label></li>
+        <!-- Add more available categories as needed -->
+    </ul>
+
+    <button onclick="updateSubscriptions()">Update Subscriptions</button>
+
+    <script>
+        function unsubscribe(category) {
+            // Logic to unsubscribe the user from the specified category
+            alert('Unsubscribed from ' + category);
+        }
+
+        function updateSubscriptions() {
+            // Logic to update user subscriptions based on selected checkboxes
+            alert('Subscriptions updated');
+        }
+    </script>
+</body>
+</html>
